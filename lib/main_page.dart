@@ -77,7 +77,7 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('R5D4 ❤️ Caballo homosexual'),
+        title: const Text('R5D4 ❤️ Chatarra Espacial'),
       ),
       body: Column(
         children: [
@@ -241,6 +241,14 @@ class _MainPageState extends State<MainPage> {
                   text: "Izquierda",
                   onTap: () => _sendData("4"),
                   onUpTap: () => _sendData("0"),
+                ),
+              ),
+              const SizedBox(width: 8.0),
+              Expanded(
+                child: ActionButton(
+                  color: Colors.green,
+                  text: "Auto",
+                  onTap: () => _sendData("7"),
                 ),
               ),
               const SizedBox(width: 8.0),
